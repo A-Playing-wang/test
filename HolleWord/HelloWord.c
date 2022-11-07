@@ -8,13 +8,13 @@ int main(void)
         for (x = -1.5f; x < 1.5f; x += 0.05f)
         {
             a = x * x + y * y - 1;
-            //这里的@符号即为打印出的心形图案符号，可更改
+            //杩欓噷鐨凘绗﹀彿鍗充负鎵撳嵃鍑虹殑蹇冨舰鍥炬绗﹀彿锛屽彲鏇存敼
             char ch = a * a * a - x * x * y * y * y <= 0.0f ? '*' : ' ';
             putchar(ch);
-            //或者putchar(a*a*a-x*x*y*y*y<=0.0f?'*':' ');
+            //鎴栬�卲utchar(a*a*a-x*x*y*y*y<=0.0f?'*':' ');
         }
         printf("\n");
     }
 
-    return 0;
+    return 0;  
 }
